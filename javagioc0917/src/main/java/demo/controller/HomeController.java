@@ -49,15 +49,15 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-//		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
-//				MyConfiguration.class);
-//		MyBean service = ctx.getBean(MyBean.class);
-//		
-//				
-//		MyBean newService = ctx.getBean(MyBean.class);
-//		System.out.println("service ="+service.toString());
-//		System.out.println("newService ="+newService.toString());
-//		ctx.close();
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
+				MyConfiguration.class);
+		MyBean service = ctx.getBean(MyBean.class);
+		
+				
+		//MyBean newService = ctx.getBean(MyBean.class);
+		System.out.println("service ="+service.toString());
+		//System.out.println("newService ="+newService.toString());
+		ctx.close();
 		
 		return "home";
 	}
