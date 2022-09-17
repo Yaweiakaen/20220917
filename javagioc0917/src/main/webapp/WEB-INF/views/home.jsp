@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Book View</title>
 </head>
 <body>
-Server Time:${serverTime}
+ Book : ${book}
 </body>
 </html>
